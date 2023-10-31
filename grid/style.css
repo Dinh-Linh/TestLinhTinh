@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.superContainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(15, 50px);
+    grid-template-rows: repeat(9, 50px);
+    border: 1px solid black;
+    /* grid-template-areas: ""; tý về xem lại */
+}
+
+.Box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.Box1 {
+    background-color: #D5E8D4;
+    grid-column: 1/16;
+}
+
+.Box2 {
+    background-color: #fff2cc;
+    grid-column: 1/10;
+    grid-row: 2/6;
+}
+
+.Box3 {
+    background-color: #dae8fc;
+    grid-column: 10/14;
+    grid-row: 2/3;
+}
+
+.Box4 {
+    background-color: #f8cecc;
+    grid-column: 14/16;
+    grid-row: 2/4;
+}
+
+.Box5 {
+    background-color: #f5f5f5;
+    grid-row: 3/6;
+    grid-column: 10/12;
+}
+
+.Box6 {
+    background-color: #ffe6cc;
+    grid-row: 3/6;
+    grid-column: 12/14;
+}
+
+.Box7 {
+    background-color: #e1d5e7;
+    grid-row: 4/9;
+    grid-column: 14/16;
+}
+
+.Box8 {
+    background-color: #dae8fc;
+    grid-row: 6/7;
+    grid-column: 1/8;
+}
+
+.Box9 {
+    background-color: #d5e8d4;
+    grid-row: 7/9;
+    grid-column: 1/8;
+}
+
+.Box10 {
+    background-color: #e1d5e7;
+    grid-column: 8/14;
+    grid-row: 6/8;
+}
+
+.Box11 {
+    background-color: #D5E8D4;
+    grid-column: 8/14;
+    grid-row: 8/9;
+}
+
+.Box12 {
+    background-color: #dae8fc;
+    grid-row: 9/10;
+    grid-column: 1/16;
+}

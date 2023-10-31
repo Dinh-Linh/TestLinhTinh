@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    width: 218px;
+    height: 36px;
+    padding: 16px;
+    margin-top: 30px;
+}
+
+
+header {
+    display: inline;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.end {
+    display: inline;
+    margin-block-end: 24px;
+    margin-block-start: 24px;
+}

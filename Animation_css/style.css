@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+}
+/*Transition. Xem kĩ cubic-bezier*/
+.blue{
+    background-color: blue;
+    transition-property: background-color, width; /*Thuộc tính cần thay đổi animation*/
+    transition-duration: 900ms, 2000ms;/*Khoảng thời gian thay đổi*/
+    transition-delay: 200ms;/*Độ trễ của animation*/
+    transition-timing-function: ease-in-out;/*Hàm dùng để tính toán*/
+    transition: background-color 900ms ease-in-out, width 2s ease-in; /*Short hand*/
+}
+
+
+.blue:hover{
+    width: 200px;
+    background-color: brown;
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+}
+
+.menu li::after{
+    width: 0;
+    height: 4px;
+    background-color: orange;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 1s;
+}
+
+.menu li:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+
+/*Css-Animation*/
+
+.yellow{
+    position: relative;
+    background-color: yellow;
+    animation-name: loading, move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /*infinite: Lặp đi lặp lại không có điểm dừng*/
+    animation-direction: alternate; /*Chuyển động mượt mà hơn*/
+    animation-timing-function: ease-in-out;
+    /* animation: loading 2s, infinite alternate, move 4s, infinite alternate; Cú pháp shorthand */
+}
+@keyframes loading{
+    /* 0%{
+
+    }
+    100%{
+
+    } */
+    from{
+        background-color: red;
+        
+    }
+
+    50%{
+        background-color: pink;
+        width: 200px;
+    }
+
+    75%{
+        background-color: black;
+        width: 120px;
+    }
+
+    to{
+        background-color: green;
+        width: 150px;
+    }
+}
+
+@keyframes move{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100px;
+    }
+}
